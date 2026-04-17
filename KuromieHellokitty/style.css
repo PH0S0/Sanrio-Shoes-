@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: rgb(255, 218, 247);
+  
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8d319b;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: rgb(31, 31, 31);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    height: 60px;
+    margin-right: 0px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .menu a:hover {
+    color: rgb(247, 171, 255);
+  }
+  
+  h1 {
+      font-family: 'UnifrakturCook', cursive;
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'Outfit', sans-serif;
+    }
+  
+  p {
+      text-align: left;
+      margin-left: 1px;
+      margin-top: -4px;
+      opacity: 0.2;
+  }
+
+  .foto {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 55%;
+    margin-top: 10px;
+  }
