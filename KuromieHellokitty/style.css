@@ -1,58 +1,156 @@
 body {
-    margin: 0;
-    font-family: 'Outfit', sans-serif;
-    background-color: rgb(255, 218, 247);
-  
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #8d319b;
-    padding: 10px 20px;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    color: rgb(31, 31, 31);
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .logo img {
-    height: 60px;
-    margin-right: 0px;
-  }
-  
-  .menu a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-  }
-  
-  .menu a:hover {
-    color: rgb(247, 171, 255);
-  }
-  
-  h1 {
-      font-family: 'UnifrakturCook', cursive;
-      text-align: center;
-      margin-top: 20px;
-      font-family: 'Outfit', sans-serif;
-    }
-  
-  p {
-      text-align: left;
-      margin-left: 1px;
-      margin-top: -4px;
-      opacity: 0.2;
-  }
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(
+    to right,
+    #6a3a8a 0%,
+    #ffc0e6 50%,
+    #ff9ed2 100%
+  );
+}
 
-  .foto {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 55%;
-    margin-top: 10px;
-  }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8d319b;
+  padding: 10px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.logo img {
+  height: 60px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.menu a:hover {
+  color: rgb(247, 171, 255);
+}
+
+h1 {
+  font-family: 'UnifrakturCook', cursive;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bloco-imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1500px;
+  margin: 15px auto;
+}
+
+.img-wrap {
+  position: relative;
+  width: 1050px;
+}
+
+.foto {
+  width: 1050px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  backdrop-filter: blur(0px);
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.overlay.left {
+  left: 0;
+  border-radius: 15px 0 0 15px;
+}
+
+.overlay.right {
+  right: 0;
+  border-radius: 0 15px 15px 0;
+}
+
+.texto {
+  width: 380px;
+  min-height: 260px;
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.texto h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.texto p {
+  opacity: 0.9;
+}
+
+.esquerda {
+  text-align: right;
+  background: linear-gradient(135deg, #5a2a7a, #8d319b);
+  color: white;
+}
+
+.direita {
+  text-align: left;
+  background: linear-gradient(135deg, #ffb6d9, #ff69b4);
+  color: #4a004a;
+}
+
+.texto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.link-img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 3;
+}
+
+.esquerda-link {
+  left: 0;
+}
+
+.direita-link {
+  right: 0;
+}
+
+.bloco-imagem:has(.esquerda:hover) .overlay.right {
+  backdrop-filter: blur(6px);
+}
+
+.bloco-imagem:has(.direita:hover) .overlay.left {
+  backdrop-filter: blur(6px);
+}
+
+.bloco-imagem:has(.esquerda:hover) .direita {
+  opacity: 0.3;
+  filter: blur(2px);
+}
+
+.bloco-imagem:has(.direita:hover) .esquerda {
+  opacity: 0.3;
+  filter: blur(2px);
+}
