@@ -1,0 +1,1 @@
+element.style.transform = 'translateX(-100%)'
