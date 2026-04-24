@@ -1,11 +1,47 @@
 body{
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
     background: linear-gradient(135deg, #ffb6d9, #ff69b4);
     
 }
 
-.foto {
-    width: 1050px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    display: block;
-  }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8d319b;
+  padding: 10px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.logo img {
+  height: 60px;
+}
+
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.menu a:hover {
+  color: rgb(247, 171, 255);
+}
+
+
+.foto 
+{
+  width: 1050px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  display: block;
+}
+
+h1 
+{
+  font-family: 'UnifrakturCook', cursive;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

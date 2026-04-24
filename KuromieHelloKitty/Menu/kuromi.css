@@ -1,6 +1,31 @@
 body{
+    margin: 0;
     background: linear-gradient(135deg, #5a2a7a, #8d319b);
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8d319b;
+  padding: 10px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.logo img {
+  height: 60px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.menu a:hover {
+  color: rgb(247, 171, 255);
+}
+
 
 .foto {
     width: 1050px;
